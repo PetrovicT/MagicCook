@@ -1,0 +1,15 @@
+.image_food{
+    max-height: 10px !important;
+    height: 70%;
+}
+
+.detailButton{
+    width: 160px;
+	background-color: rgb(224, 126, 46) !important;
+	color:white !important;  
+}
+
+.lettersFoodBig
+{
+    font-size:14px !important;
+}
