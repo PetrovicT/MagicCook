@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/pocetna.css">
-
     <title>Magic Cook - pregled glavnih jela</title>
     <style>
         h1,
@@ -20,136 +19,121 @@
         h4,
         h5,
         h6 {
-            font-family: "Oswald"
+            font-family: "Open Sans"
         }
-
         body {
             font-family: "Open Sans"
         }
     </style>
-    <script src="js/script.js"></script>
 </head>
 
 <body class="w3-light-grey">
+
     <header>
         <div class="w3-container w3-padding-large w3-card-4 header_background">
-          <div class="w3-row">
-            <div class="w3-col w3-left">
-              <a href="index_eng.html"><img src="images/england.png" alt="" class="flag"></a>
-              <a href="index.html"><img src="images/serbia.png" alt="" class="flag"></a>
+            <div class="w3-row">
+                <div class="w3-col w3-left">
+                    <a href="index_eng.html"><img src="images/england.png" alt="" class="flag"></a>
+                    <a href="index.html"><img src="images/serbia.png" alt="" class="flag"></a>
+                </div>
+                <div class="w3-center header_text">
+                    <img src="images/food.png" alt="logo" class="myLogo">
+                    Magic Cook
+                </div>
+                <br>
             </div>
-            <div class="w3-center header_text">
-              <img src="images/food.png" alt="logo" class="myLogo">
-              Magic Cook
-            </div>
-            <br>
-          </div>
         </div>
-      </header>
-    
-      <div class="w3-row">
+    </header>
+
+    <div class="w3-row">
         <div class="w3-col">
-          <div class="w3-bar color-dark-orange">
-            <a href="index.html" class="w3-bar-item w3-button letters hover_gray use100height"><i class="fa fa-home"></i> Početna</a>
-            <div class="w3-dropdown-hover hover_gray">
-              <a href="" class="w3-bar-item w3-button letters hover_gray use100height"><i class="fa fa-fire"></i> Recepti</a>
-              <div id="menuDropdown" class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i> Predjedlo</a>
-                <a href="" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i> Glavno jelo</a>
-                <a href="" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i> Desert</a>
-                <a href="" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i> Užina</a>
-              </div>
-            </div>
-    
-            <a href="" class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-plus-circle"></i> Dodaj recept</a>
-            <a href="" class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-user"></i> Moj nalog</a>
-            <a href="" class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-question-circle-o"></i> O nama</a>          
-    
-            <div id="SearchBar" class="w3-right">
-              <a href="" class="w3-bar-item w3-button w3-right letters hover_gray"><i class="fa fa-search"></i></a>
-              <input id="SearchField" class="w3-bar-item w3-right" type="text" placeholder="Pretraži recepte...">
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="w3-bar color-dark-orange">
+                <a href="index.html" class="w3-bar-item w3-button letters hover_gray use100height"><i
+                        class="fa fa-home"></i> Početna</a>
+                <div class="w3-dropdown-hover hover_gray">
+                    <a href="" class="w3-bar-item w3-button letters hover_gray use100height"><i class="fa fa-fire"></i>
+                        Recepti</a>
+                    <div id="menuDropdown" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i>
+                            Predjedlo</a>
+                        <a href="" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i>
+                            Glavno jelo</a>
+                        <a href="" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i>
+                            Desert</a>
+                        <a href="" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i>
+                            Užina</a>
+                    </div>
+                </div>
 
-    <div class="w3-content" style="max-width:90%">
-        <!-- POZADINA -->
+                <a href="" class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-plus-circle"></i> Dodaj
+                    recept</a>
+                <a href="" class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-user"></i> Moj nalog</a>
+                <a href="" class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-question-circle-o"></i> O
+                    nama</a>
+
+                <div id="SearchBar" class="w3-right">
+                    <a href="" class="w3-bar-item w3-button w3-right letters hover_gray"><i
+                            class="fa fa-search"></i></a>
+                    <input id="SearchField" class="w3-bar-item w3-right" type="text" placeholder="Pretraži recepte...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-content style_content">
         <div class="w3-row w3-padding w3-border">
-
-            <!-- UNOSI -->
-            <div class="w3-col l4 s4"> 
-
-                <!-- UNOS -->
-                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4">
-                    <div class="w3-center" style="padding-left: 5%;">
-                        <h3 class="letters_dark_orange lettersFoodBig"><b>Mešano meso na žaru</b></h3>
+    
+            <div class="w3-col l4 s12">
+                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4 max100">
+                    <div class="w3-center paddingLeft5 max100">
+                        <h3 class="letters_dark_orange lettersFoodBig max100"><b>Losos u terijaki sosu</b></h3>
                     </div>
 
                     <!-- PICTURE OF FOOD -->
-                    <div class="input">
-                        <img src="images/herbs.jpg" alt="Mešano meso na žaru" class="image_food">
+                    <div class="input max100">
+                        <img src="images/salmon.jpg" alt="Losos u terijaki sosu" class="image_food max100">
                         <br>
-                        <button onclick="window.location.href='';" class="w3-button buttons"
-                            style="font-weight: normal;">Pogledaj
+                        <button onclick="window.location.href='';" class="w3-button buttons max100 hover_gray">Pogledaj
                         </button>
                     </div>
                     <br>
                 </div>
-
-                <!-- KRAJ UNOSI -->
             </div>
 
-            <!-- UNOSI -->
-            <div class="w3-col l4 s4"> 
-
-                <!-- UNOS -->
-                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4">
-                    <div class="w3-center" style="padding-left: 5%;">
-                        <h3 class="letters_dark_orange lettersFoodBig"><b>Losos u terijaki sosu</b></h3>
+            <div class="w3-col l4 s12">
+                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4 max100">
+                    <div class="w3-center paddingLeft5 max100">
+                        <h3 class="letters_dark_orange lettersFoodBig max100"><b>Špagete sa plodovima mora</b></h3>
                     </div>
 
                     <!-- PICTURE OF FOOD -->
-                    <div class="input">
-                        <img src="images/salmon.jpg" alt="Losos u terijaki sosu" class="image_food">
+                    <div class="input max100">
+                        <img src="images/spageti.jpg" alt="Špagete sa plodovima mora" class="image_food max100">
                         <br>
-                        <button onclick="window.location.href='';" class="w3-button buttons"
-                            style="font-weight: normal;">Pogledaj
+                        <button onclick="window.location.href='';" class="w3-button buttons max100 hover_gray">Pogledaj
                         </button>
                     </div>
                     <br>
                 </div>
-
-                <!-- KRAJ UNOSI -->
             </div>
 
-            <!-- UNOSI -->
-            <div class="w3-col l4 s4"> 
-
-                <!-- UNOS -->
-                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4">
-                    <div class="w3-center" style="padding-left: 5%;">
-                        <h3 class="letters_dark_orange lettersFoodBig"><b>Špageti sa plodovima mora</b></h3>
+            <div class="w3-col l4 s12">
+                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4 max100">
+                    <div class="w3-center paddingLeft5 max100">
+                        <h3 class="letters_dark_orange lettersFoodBig max100"><b>Mešano meso na žaru</b></h3>
                     </div>
 
                     <!-- PICTURE OF FOOD -->
-                    <div class="input">
-                        <img src="images/spageti.jpg" alt="Špageti sa plodovima mora" class="image_food">
+                    <div class="input max100">
+                        <img src="images/herbs.jpg" alt="Mešano meso na žaru" class="image_food max100">
                         <br>
-                        <button onclick="window.location.href='';" class="w3-button buttons"
-                            style="font-weight: normal;">Pogledaj
+                        <button onclick="window.location.href='';" class="w3-button buttons max100 hover_gray">Pogledaj
                         </button>
                     </div>
                     <br>
                 </div>
-
-                <!-- KRAJ UNOSI -->
             </div>
-
-            <!-- KRAJ POZADINA -->
         </div>
-
-        <!-- KRAJ SADRZAJ -->
         <br>
     </div>
 
@@ -162,5 +146,4 @@
     </footer>
 
 </body>
-
 </html>
