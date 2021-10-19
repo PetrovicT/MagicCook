@@ -4,24 +4,6 @@
 	right: 0px;
 }
 
-#JigglypuffFooterImage{
-	position: relative;
-	width: 100px;
-	height: 100px;
-	top: 100px;
-}
-
-#Mouth{
-	position: relative;
-	right:74px;
-	top:112px;
-	display:none;
-}
-
-#JigglypuffFooterImage:hover + #Mouth{
-	display:inline;
-}
-
 .close-button:hover{
 	background-color:red !important;
 }
@@ -114,3 +96,89 @@ ol{
   background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
 }  
 
+.letters_dark_orange {
+	color: rgb(224, 126, 46);
+}
+
+.letters_dark_gray {
+	color: #555;
+}
+
+.color-dark-orange {        
+	background: rgb(224, 126, 46); 
+}
+
+.hover_gray:hover{
+	background-color: #555 !important;
+	color: whitesmoke !important;
+}
+
+#menuDropdown {
+	position: absolute;
+	top: 38px;
+	left: 106px;
+}
+
+.no_padding{
+	padding: 0 !important;
+}
+
+.use100height{
+	height: 100%;
+}
+
+.style_content{
+	max-width:85%;
+	padding-top: 0;
+}
+
+.padding5per{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.padding5perVertical{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+
+.font24{
+	font-size: 24px;
+}
+
+.font18{
+	font-size: 18px;
+}
+
+.font20{
+	font-size: 20px;
+}
+
+.font26{
+	font-size: 26px;
+}
+
+.font34{
+	font-size: 34px;
+}
+
+
+#styleSpans{
+	padding-left: 10%; 
+	padding-right: 10%;
+	width: 100%; 
+	align-items: center;
+}
+
+.width100{
+	width: 100%;
+}
+
+.max100{
+	max-width: 100% !important;
+}
+
+.overflowH{
+	overflow: hidden;
+}

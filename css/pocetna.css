@@ -50,7 +50,14 @@ div.container {
 }
 
 .card_text{
-  margin-top: 0px; margin-bottom: 0px; font-size: 22px; background-color: rgb(224, 126, 46);color: white; text-align: center; cursor: pointer;
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  font-size: 22px; 
+  background-color: rgb(224, 126, 46);
+  color: white; 
+  text-align: center; 
+  cursor: pointer;
+  max-width: 100% !important;
 }
 
 
@@ -79,9 +86,7 @@ div.container {
   font-size: 16px;
 }
 
-.letters_dark_orange {
-  color: rgb(224, 126, 46);
-}
+
 
 .left_color{
   background-color: rgb(224, 126, 46);

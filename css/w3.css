@@ -399,13 +399,13 @@ a {
 }
 .w3-dropdown-hover:first-child,
 .w3-dropdown-click:hover {
-    background-color: #ccc;
-    color: #000;
+    background-color: #555;
+    color: white;
 }
 .w3-dropdown-hover:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child {
-    background-color: #ccc;
-    color: #000;
+    background-color: #555;
+    color: white;
 }
 .w3-dropdown-content {
     cursor: auto;
@@ -473,7 +473,7 @@ a {
     width: 600px;
 }
 .w3-bar {
-	position:fixed;
+	position:relative;
     width: 100%;
 }
 .w3-center .w3-bar {
