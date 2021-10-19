@@ -401,11 +401,13 @@ a {
 .w3-dropdown-click:hover {
     background-color: #555;
     color: white;
+    text-decoration: none;
 }
 .w3-dropdown-hover:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child {
     background-color: #555;
     color: white;
+    text-decoration: none;
 }
 .w3-dropdown-content {
     cursor: auto;

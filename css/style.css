@@ -4,33 +4,10 @@
 	right: 0px;
 }
 
-.close-button:hover{
-	background-color:red !important;
-}
-
 .buttons {
 	width: 160px;
 	background-color: rgb(224, 126, 46) !important;
 	color:white !important;  
-}
-
-.blue {
-	background-color: rgb(58, 80, 148);
-}
-
-.letters_blue {
-	color: rgb(58, 80, 148);
-}
-
-.color-blue {        
-    background-color: #63a4ff;
-    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
-}
-
-.color-dark-blue {        
-	background: #0575E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #021B79, #0a63bd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .input {
@@ -41,30 +18,9 @@
 	padding-left: 5%;
 	padding-right: 6%;
 }
-
-.gradient_literature {        
-    background: #0575E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, rgb(7,73,165), #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, rgb(7,73,165), #0a63bd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.letters_dark_blue, #text_input{        
-    color: #021B79;
-}
     
 .letters {        
     color: white;
-}
-
-#notes div.suggestions {
-  border-radius: 5px;
-  border:deepskyblue;
-  border-width:thick;
-  border-style: groove;
-}
-
-#notes ol {
-  list-style: disc;    
 }
 
 ol{
@@ -75,26 +31,10 @@ ol{
 #like {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  }
-
-#left {
-  padding-top: 5%;
-  width: calc(70% - 3px);
-  border-right: 3px solid darkblue;
-  float: left;
-  background-color: #63a4ff;
-  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  justify-content:space-between;
+  align-items:flex-start;
 }
 
-#right {
-  padding-top:0;
-  width: calc(30% + 3px);
-  float: right;
-  background-color: #63a4ff;
-  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
-}  
 
 .letters_dark_orange {
 	color: rgb(224, 126, 46);
@@ -111,6 +51,7 @@ ol{
 .hover_gray:hover{
 	background-color: #555 !important;
 	color: whitesmoke !important;
+	text-decoration: none !important;
 }
 
 #menuDropdown {
@@ -142,7 +83,6 @@ ol{
 	padding-bottom: 5%;
 }
 
-
 .font24{
 	font-size: 24px;
 }
@@ -162,7 +102,6 @@ ol{
 .font34{
 	font-size: 34px;
 }
-
 
 #styleSpans{
 	padding-left: 10%; 
@@ -186,3 +125,85 @@ ol{
 .paddingLeft5{
 	padding-left: 5%;
 }
+
+.star{
+	border-color: black;
+	color:black;
+}
+
+.picture_size {
+	height: 460px !important;
+}
+
+.height100{
+	height: 100% !important;
+	text-align: center !important;
+}
+
+#SearchBar {
+	height: 80%;
+	padding-top: 0%;
+	max-width: 100%;
+	width:346px; 
+}
+  
+#SearchBar2{
+	width:100%; 
+	max-width: 100%; 
+	padding-top: 30px; 
+	padding-bottom: 20px; 
+	border-color: rgb(224, 126, 46) !important;
+}
+  
+#SearchField {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	width:300px; 
+	height: 26px;
+	max-width: 75%;
+  
+}
+  
+.active {
+	background-color: rgb(255, 142, 50);
+	color: white;
+}
+  
+.flag{
+	width: 35px;
+	height: 35px;
+	z-index: 5;
+}
+  
+hr{
+	border-top: 1px solid white;
+}
+
+.image_food{
+    height: 70%;
+}
+
+.detailButton{
+    width: 160px;
+	background-color: rgb(224, 126, 46) !important;
+	color:white !important;  
+}
+
+.lettersFoodBig
+{
+    font-size:20px !important;
+}
+
+.stars{
+	float:right !important;
+	padding-right: 6%;
+}
+
+.input_border_orange{
+	color: rgb(224, 126, 46);
+	border-color: rgb(224, 126, 46);
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:  black !important;
+  }

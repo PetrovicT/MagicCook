@@ -1,10 +1,3 @@
-div.polaroid {
-  width:fit-content;
-  background-color: rgb(95, 16, 16);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 0px;
-}
-  
 div.container {
   text-align: center;
   padding: 0 0;
@@ -18,15 +11,13 @@ div.container {
   text-align: center;
 }
 
-
 .grid_input {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: ceter;
   padding-left: 0;
-  padding-right: 0;
-   
+  padding-right: 0;  
 }
 
 .grid-container {
@@ -41,8 +32,7 @@ div.container {
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color:  rgb(224, 126, 46);
 }
-    
-    
+      
 .food_example {
   width: 300px; 
   cursor: pointer;
@@ -59,7 +49,6 @@ div.container {
   cursor: pointer;
   max-width: 100% !important;
 }
-
 
 .myLogo{
  width: 8%;
@@ -85,8 +74,6 @@ div.container {
   color: white;
   font-size: 16px;
 }
-
-
 
 .left_color{
   background-color: rgb(224, 126, 46);
