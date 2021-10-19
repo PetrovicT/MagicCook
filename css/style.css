@@ -165,8 +165,7 @@ ol{
 }
   
 .active {
-	background-color: rgb(255, 142, 50);
-	color: white;
+	font-weight: bold;
 }
   
 .flag{
