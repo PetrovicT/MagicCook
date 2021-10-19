@@ -207,3 +207,11 @@ hr{
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
 	color:  black !important;
   }
+
+.heightFit{
+	height: 300px;
+}
+
+.max{
+	height:100%;
+}
