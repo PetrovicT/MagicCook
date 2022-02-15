@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="rs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/styleVD.css">
+    <link rel="stylesheet" href="../css/pocetna.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" href="../images/food.png">
+
+    <title>Magic Cook - O nama</title>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Open Sans"
+        }
+
+        body {
+            font-family: "Open Sans"
+        }
+    </style>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body class="w3-light-grey">
+    <header>
+        <div class="w3-container w3-padding-large w3-card-4 header_background">
+            <div class="w3-row">
+                <div class="w3-col w3-left">
+                    <a href="#" id="EN"><img src="../images/england.png" alt="" class="flag"></a>
+                    <a href="#" id="RS"><img src="../images/serbia.png" alt="" class="flag"></a>
+                </div>
+
+                <div class="w3-center header_text">
+                    <img src="../images/food.png" alt="logo" class="myLogo">
+                    Magic Cook
+                </div>
+                <br>
+            </div>
+        </div>
+    </header>
+
+    <div class="w3-row w3-light-gray">
+        <div class="w3-col">
+            <div class="w3-bar color-dark-orange">
+                <a href="index.html" class="w3-bar-item w3-button letters hover_gray use100height"><i
+                        class="fa fa-home"></i> Početna</a>
+                <div class="w3-dropdown-hover hover_gray">
+                    <a href="" class="w3-bar-item w3-button letters hover_gray use100height"><i class="fa fa-fire"></i>
+                        Recepti</a>
+                    <div id="menuDropdown" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="recepti.html?type=0" class="w3-bar-item w3-button hover_gray"><i
+                                class="fa fa-angle-double-right"></i> Predjelo</a>
+                        <a href="recepti.html?type=1" class="w3-bar-item w3-button hover_gray"><i
+                                class="fa fa-angle-double-right"></i> Glavno jelo</a>
+                        <a href="recepti.html?type=2" class="w3-bar-item w3-button hover_gray"><i
+                                class="fa fa-angle-double-right"></i> Desert</a>
+                        <a href="recepti.html?type=3" class="w3-bar-item w3-button hover_gray"><i
+                                class="fa fa-angle-double-right"></i> Užina</a>
+                    </div>
+                </div>
+
+                <a href="dodaj.html" tabindex="-1" aria-disabled="true"
+                    class="w3-bar-item w3-button letters hover_gray active"><i class="fa fa-plus-circle"></i> Dodaj recept</a>
+                <a href="moj_nalog.html" tabindex="-1" aria-disabled="true"
+                    class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-user"></i> Moj nalog</a>
+                <a href="o_nama.html" tabindex="-1" aria-disabled="true"
+                    class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-question-circle-o"></i> O nama</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-content style_content max100">
+        <div class="w3-row w3-padding w3-border">
+            <div class="w3-col l12 s12 padding5per">
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb w3-light-gray">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-muted">Početna</a></li>
+                        <li class="breadcrumb-item active"><a href="#" class="text-body">Dodaj recept</a></li>
+                    </ol>
+                </nav>
+                <!-- UNOS -->
+
+                <!-- PRETRAGA -->
+                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4 ">
+
+                    <div class="w3-left paddingLeft5"> <br>
+                        <h3 class=""><b>Saveti i preporuke prilikom dodavanja recepta</b></h3> <br>
+                    </div>
+
+                    <br>
+                    <div class="w3-left paddingLeft5" style="padding-right: 6%; font-weight: bold;">
+                        <ol>
+                            <li>Prilikom formulacije recepta trudite se da pitanje bude što jasnije i preciznije</li>
+                            <li>Pre nego što pošaljete recept pročitajte ga još jednom i ispravite eventualne greške
+                            </li>
+                            <li>Proverite da li ste uneli sve neophodne informacije (ime jela, grupu recepta, uputstvo
+                                za pripremu, trajanje i nivo težine pripremanja)</li>
+                        </ol>
+                        <br>
+
+
+                        <hr style="border-top-color: rgb(224, 126, 46);">
+                    </div>
+
+                    <div class="w3-left paddingLeft5">
+                        <h3 class=""><b>Dodaj recept</b></h3>
+                    </div>
+
+                    <br>
+                    <br> <br>
+                    <div class="input" id="addForm">
+                        <div class="w3-row">
+                            <div class="w3-col s12 font16">Izaberite kategoriju (grupu) recepta: </div>
+                            <select class="w3-col s12 font16 w3-input input_border_orange input_black_letters"
+                                id="recipeType">
+                                <option value="0">Predjelo</option>
+                                <option value="1">Glavno jelo</option>
+                                <option value="2">Desert</option>
+                                <option value="3">Užina</option>
+                            </select>
+                        </div>
+
+                        <form action="">
+
+                            <br>
+
+                            <input class="w3-input input_black_letters input_border_orange font16" id="recipeName"
+                                type="text" placeholder="Naziv jela" required
+                                oninvalid="this.setCustomValidity('Unesite naziv jela!')"
+                                oninput="this.setCustomValidity('')"> <br>
+                            <textarea style=" resize: none; width: 100%;" class="input_border_orange font16" name=""
+                                id="recipeData" cols="355" rows="10" placeholder=" Uputstvo za pripremu jela" required
+                                oninvalid="this.setCustomValidity('Unesite upustvo za pripremu jela!')"
+                                oninput="this.setCustomValidity('')"></textarea>
+                            <br> <br>
+
+                            <input class="w3-input input_black_letters input_border_orange font16" id="recipeLength"
+                                type="text" placeholder="Trajanje spremanja jela" required
+                                oninvalid="this.setCustomValidity('Unesite trajanje!')"
+                                oninput="this.setCustomValidity('')"> <br>
+
+                            <div class="w3-row">
+                                <div class="w3-col s12 font16">Unesite težinu spremanja: </div>
+                                <select class="w3-col s12 font16 w3-input input_border_orange input_black_letters"
+                                    id="recipeDif">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <input class="w3-input input_black_letters input_border_orange font16" id="recipeLink"
+                                type="text" placeholder="Dodajte link za spremanje (opciono)" 
+                               > <br>
+
+                            <br> <br>
+
+                            <!-- DUGMAD -->
+                            <div>
+                                <div style="float: right;">
+                                    <button onclick="window.location.href='index.html';"
+                                        class="w3-button buttons hover_gray">
+                                        Odustani</button> &nbsp
+                                    <button id="predaj" type="submit" class="w3-button buttons hover_gray"><u onclick=""
+                                            style="text-decoration: none; font-weight: normal;">Pošalji</u></button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 w3-left no_padding">
+                                    <p class="float-lg-end" id="errorAdd"></p>
+                                </div>
+                            </div>
+
+                            <br>
+                    </div>
+                    </form>
+                </div>
+                <hr>
+                <br>
+
+                <!-- KRAJ UNOSI -->
+            </div>
+
+            <br>
+
+            <!-- KRAJ POZADINA -->
+        </div>
+
+        <!-- KRAJ SADRZAJ -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container footer_style">
+        <div class="w3-row footer_text w3-right">
+            <div class="col-12">
+                <h4 class="mb-3">Pogledajte i sajtove</h4>
+                <div class="">
+                    <a href="https://www.tiktok.com/" class=" text-reset">TikTok</a>
+                </div>
+                <div class="">
+                    <a href="https://www.facebook.com/" class="text-reset">Facebook</a>
+                </div>
+                <div class="">
+                    <a href="https://www.instagram.com/" class="text-reset">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row w3-left">
+            <div class="col-12">
+                <br> <br> 
+                <p class="footer_text">Copyright 2022, Teodora Petrović - Odsek za softversko
+                    inženjerstvo
+                    Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/database.js"></script>
+    <script src="../js/new_recipe.js"></script>
+    <script src="../js/basic.js"></script>
+ 
+</body>
+
+</html>

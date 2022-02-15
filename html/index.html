@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="rs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Cook - Pocetna</title>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Open Sans"
+        }
+
+        body {
+            font-family: "Open Sans"
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/styleVD.css">
+    <link rel="stylesheet" href="../css/pocetna.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" href="../images/food.png">
+</head>
+
+<body class="w3-light-grey">
+    <header>
+        <div class="w3-container w3-padding-large w3-card-4 header_background">
+            <div class="w3-row">
+                <div class="w3-col w3-left">
+                    <a href="#" id="EN"><img src="../images/england.png" alt="" class="flag"></a>
+                    <a href="#" id="RS"><img src="../images/serbia.png" alt="" class="flag"></a>
+                </div>
+
+                <div class="w3-center header_text">
+                    <img src="../images/food.png" alt="logo" class="myLogo">
+                    Magic Cook
+                </div>
+                <br>
+            </div>
+        </div>
+    </header>
+
+    <div class="w3-row w3-light-gray">
+        <div class="w3-col">
+            <div class="w3-bar color-dark-orange">
+                <a href="index.html" class="w3-bar-item w3-button letters hover_gray use100height active"><i
+                        class="fa fa-home"></i> Početna</a>
+                <div class="w3-dropdown-hover hover_gray">
+                    <a href="" class="w3-bar-item w3-button letters hover_gray use100height"><i class="fa fa-fire"></i>
+                        Recepti</a>
+                    <div id="menuDropdown" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="recepti.html?type=0" class="w3-bar-item w3-button hover_gray"><i
+                                class="fa fa-angle-double-right"></i> Predjelo</a>
+                        <a href="recepti.html?type=1" class="w3-bar-item w3-button hover_gray"><i
+                                class="fa fa-angle-double-right"></i> Glavno jelo</a>
+                        <a href="recepti.html?type=2" class="w3-bar-item w3-button hover_gray"><i
+                                class="fa fa-angle-double-right"></i> Desert</a>
+                        <a href="recepti.html?type=3" class="w3-bar-item w3-button hover_gray"><i
+                                class="fa fa-angle-double-right"></i> Užina</a>
+                    </div>
+                </div>
+
+                <a href="dodaj.html" tabindex="-1" aria-disabled="true"
+                    class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-plus-circle"></i> Dodaj recept</a>
+                <a href="moj_nalog.html" tabindex="-1" aria-disabled="true"
+                    class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-user"></i> Moj nalog</a>
+                <a href="o_nama.html" tabindex="-1" aria-disabled="true"
+                    class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-question-circle-o"></i> O nama</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-content style_content max100 w3-light-gray">
+        <div class="w3-row w3-padding w3-border">
+            <div class="w3-col l12 s12 padding5per">
+                <!-- UNOS -->
+                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4">
+                    <div class="w3-center font24">
+                        Dobrodošli na Magic Cook! <br><br>
+
+                    </div>
+
+                    <!-- LINK LOGIN/REGISTRACIJA -->
+                    <div class="w3-center">
+                        <br>
+                        <div class="overlay font18 "><i class="fa fa-user"></i> Već imate nalog? <a onclick="return confirm('Nije implementirano!')" href=""
+                                class="letters_dark_orange">LOGIN</a>
+                        </div>
+                        <div class="overlay font18 "><i class="fa fa-user"></i> Nemate nalog? <a onclick="return confirm('Nije implementirano!')" href=""
+                                class="letters_dark_orange">REGISTRUJ SE</a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- PRETRAGA -->
+                <div class="w3-container w3-center w3-light-grey w3-margin  w3-card-4">
+                    <br>
+                    <div class="w3-center w3-light-grey w3-row">
+                        <div class="w3-light-grey w3-margin-bottom w3-margin-top" id="styleSpans">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+
+                <div class="w3-container w3-margin w3-padding-large w3-card-4 card_text padding5perVertical">
+                    <div class="w3-center">
+                        <h3 class="font26">Recepti sa najboljim ocenama korisnika: </h3>
+                    </div>
+                </div>
+                <div class="row w3-container w3-margin w3-padding-large w3-card-4 padding5perVertical w3-light-grey"
+                    id="recipesBEST3">
+                </div>
+                <br>
+                <hr>
+
+                <div class="w3-container w3-margin w3-padding-large w3-card-4 card_text padding5perVertical">
+                    <div class="w3-center">
+                        <h3 class="font26">Najposećeniji kulinarski blogovi: </h3>
+                    </div>
+                </div>
+
+                <div class="w3-panel w3-leftbar w3-white w3-margin w3-padding-large w3-center left_color">
+                    <p class="w3-xxlarge" style="padding-right: 12px;"><i class="font34">"Za dobro jelo najvažnije su
+                            dve stvari: kvalitetni sastojci i dobre tehnike."</i></p>
+                    <a href=""><img src="../images/blog1.png" class="max100"
+                            alt="So i biber blog - Kulinarski dnevnik jedne Ivane u Americi"></a>
+                </div>
+
+                <div class="w3-panel w3-leftbar w3-white w3-margin w3-padding-large w3-center left_color">
+                    <p class="w3-xxlarge" style="padding-right: 12px;"><i class="font34">"Želim da dokažem da nutritivno
+                            bogata hrana može biti itekako ukusna i iznenađujuća."</i></p>
+                    <a href=""><img src="../images/blog2.png" class="max100" alt="Bilo jednom u kuhinji"><br></a> <br>
+                </div>
+
+                <hr>
+
+                <div class="w3-container w3-margin w3-padding-large w3-card-4 card_text padding5perVertical">
+                    <div class="w3-center">
+                        <h3 class="font26">Preporučujemo kulinarske kurseve: </h3>
+                    </div>
+                </div>
+
+                <!-- RED OD 3 SLIKE -->
+                <div class="w3-row-padding">
+                    <div class="w3-col s4">
+                        <img src="../images/course5.png" class="width100">
+                    </div>
+
+                    <div class="w3-col s4">
+                        <img src="../images/course3.png" class="width100">
+                    </div>
+
+                    <div class="w3-col s4">
+                        <img src="../images/course4.png" class="width100">
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+
+                <!-- KRAJ UNOSI -->
+            </div>
+
+            <br>
+            <!-- KRAJ POZADINA -->
+        </div>
+        <!-- KRAJ SADRZAJ -->
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-container footer_style">
+        <div class="w3-row footer_text w3-right">
+            <div class="col-12">
+                <h4 class="mb-3">Pogledajte i sajtove</h4>
+                <div class="">
+                    <a href="https://www.tiktok.com/" class=" text-reset">TikTok</a>
+                </div>
+                <div class="">
+                    <a href="https://www.facebook.com/" class="text-reset">Facebook</a>
+                </div>
+                <div class="">
+                    <a href="https://www.instagram.com/" class="text-reset">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row w3-left">
+            <div class="col-12">
+                <br> <br>
+                <p class="footer_text">Copyright 2022, Teodora Petrović - Odsek za softversko
+                    inženjerstvo
+                    Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/database.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/basic.js"></script>
+
+
+</body>
+
+</html>

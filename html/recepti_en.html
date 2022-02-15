@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Cook -</title>
+    <link rel="icon" href="../images/food.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/styleVD.css">
+    <link rel="stylesheet" href="../css/pocetna.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Open Sans"
+        }
+
+        body {
+            font-family: "Open Sans"
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <header>
+        <div class="w3-container w3-padding-large w3-card-4 header_background">
+          <div class="w3-row">
+            <div class="w3-col w3-left">
+              <a href="#" id="EN"><img src="../images/england.png" alt="" class="flag"></a>
+              <a href="#" id="RS"><img src="../images/serbia.png" alt="" class="flag"></a>
+            </div>	
+			
+            <div class="w3-center header_text">
+              <img src="../images/food.png" alt="logo" class="myLogo">
+              Magic Cook
+            </div>
+            <br>
+          </div>
+        </div>
+      </header>
+    
+      <div class="w3-row">
+        <div class="w3-col">
+          <div class="w3-bar color-dark-orange">
+            <a href="index.html" class="w3-bar-item w3-button letters hover_gray use100height "><i class="fa fa-home"></i> Home</a>
+            <div class="w3-dropdown-hover hover_gray">
+              <a href="" class="w3-bar-item w3-button letters hover_gray use100height"><i class="fa fa-fire"></i> Recipes</a>
+              <div id="menuDropdown" class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="recepti.html?type=0" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i> Starters</a>
+                <a href="recepti.html?type=1" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i> Main dish</a>
+                <a href="recepti.html?type=2" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i> Dessert</a>
+                <a href="recepti.html?type=3" class="w3-bar-item w3-button hover_gray"><i class="fa fa-angle-double-right"></i> Snacks</a>
+              </div>
+            </div>
+    
+            <a href="dodaj.html" tabindex="-1" aria-disabled="true"  class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-plus-circle"></i> Add recipe</a>
+            <a href="moj_nalog.html" tabindex="-1" aria-disabled="true" class="w3-bar-item w3-button letters hover_gray"><i class="fa fa-user"></i> My account</a>
+            <a href="o_nama.html" tabindex="-1" aria-disabled="true" class="w3-bar-item w3-button letters hover_gray active"><i class="fa fa-question-circle-o"></i> About us</a>          
+    
+        
+          </div>
+        </div>
+      </div>
+
+
+    
+
+      <div class="w3-content style_content max100 w3-light-grey">
+        <div class="w3-row w3-padding w3-border">
+
+            <div class="w3-col l12 s12 padding5per">
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb w3-light-grey">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-muted">Recipies</a></li>
+                    </ol>
+                </nav>
+
+                <!-- UNOS -->
+
+                <!-- PRETRAGA -->
+                <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4 ">
+
+                    <br>
+                    <div class="w3-center paddingLeft5" style="padding-right: 6%; font-weight: bold;">
+                
+                        <div class="row width100 ">
+                            <div class="offset-md-1 col-11 col-lg-11 width100 w3-left">
+                                <input id="searchText" class="placeholder col-11 w3-left height100" type="text" placeholder="Search...">
+                                <a class="w3-bar-item w3-button col-1 w3-right "><i
+                                    class="fa fa-search font20 w3-right no_hover_back" id="search"></i></a>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class="row w3-center">
+                            <div class="col-12 col-lg-12 w3-center">
+                                Sort by:&nbsp;
+                                <select class="">
+                                    <option value="0" selected>Ratings</option>
+                                    <option value="1">Difficulty</option>
+                                </select>
+                            </div>
+                       
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                    <div class="w3-container w3-light-grey w3-margin w3-padding-large w3-card-4 ">
+
+                        <br>
+                        <div class="w3-center paddingLeft5 width100" style="padding-right: 6%; font-weight: bold;">
+                        <div class="w3-row width100 no_padding no_margin w3-center">
+                            <div class="w3-row width100 w3-center no_padding no_margin">
+                                <div class="col-lg-12 w3-center white-line width100">
+                                  
+                                </div>
+                                <div class="col-lg-12 w3-center width100" id="recipes-col">
+
+                                </div>
+                       
+                            </div>
+                         
+            
+                        </div>
+                    </div>
+
+
+
+                    <br>
+                    <br> <br>
+
+     
+                    <br>
+              
+                    <!-- KRAJ UNOSI -->
+                </div>
+
+
+
+                <div class="row w3-margin ">
+                    <nav class="arrows">
+                        <ul class="pagination">
+                            <li id="allBack" class="page-item"><a class="page-link letters_dark_orange" href="#">&Lt;</a></li>
+                            <li id="back" class="page-item"><a class="page-link letters_dark_orange" href="#">&LT;</a></li>
+                            <li class="page-item"><a id="curr" class="page-link letters_dark_orange" href="#">1</a></li>
+                            <li id="next" class="page-item"><a class="page-link letters_dark_orange" href="#">&GT;</a></li>
+                            <li id="allNext" class="page-item"><a class="page-link letters_dark_orange" href="#">&Gt;</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- KRAJ POZADINA -->
+            </div>
+
+            <!-- KRAJ SADRZAJ -->
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container footer_style">
+        <div class="w3-row footer_text w3-right">
+            <div class="col-12">
+                <h4 class="mb-3">Also visit</h4>
+                <div class="">
+                    <a href="https://www.tiktok.com/" class=" text-reset">TikTok</a>
+                </div>
+                <div class="">
+                    <a href="https://www.facebook.com/" class="text-reset">Facebook</a>
+                </div>
+                <div class="">
+                    <a href="https://www.instagram.com/" class="text-reset">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row w3-left">
+            <div class="col-12">
+                <br> <br> 
+                <p class="footer_text">Copyright 2022, Teodora Petrović - Software Engineering Module,
+				School of Electrical Engineering, Belgrade</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/database.js"></script>
+    <script src="../js/recipies.js"></script>
+    <script src="../js/basic.js"></script>
+</body>
+
+</html>

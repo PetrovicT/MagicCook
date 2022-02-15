@@ -1,0 +1,315 @@
+#UserDropdownMenu{
+	position: absolute;
+	top: 38px;
+	right: 0px;
+}
+
+.buttons {
+	width: 160px;
+	background-color: rgb(224, 126, 46) !important;
+	color:white !important;  
+}
+
+.input {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	padding-left: 5%;
+	padding-right: 6%;
+}
+    
+.letters {        
+    color: white;
+}
+
+ol{
+  list-style: disc;    
+  font-size: 16px;
+}
+
+#like {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+
+.letters_dark_orange {
+	color: rgb(224, 126, 46) !important;
+}
+
+.letters_dark_gray {
+	color: #555;
+}
+
+.color-dark-orange {        
+	background: rgb(224, 126, 46); 
+}
+
+.hover_gray:hover{
+	background-color: #555 !important;
+	color: whitesmoke !important;
+	text-decoration: none !important;
+}
+
+#menuDropdown {
+	position: absolute;
+	top: 38px;
+	left: 106px;
+}
+
+.no_padding{
+	padding: 0 !important;
+}
+
+.no_margin{
+	margin: 0 !important;
+}
+
+.use100height{
+	height: 100%;
+}
+
+.style_content{
+	max-width:85%;
+	padding-top: 0;
+}
+
+.padding5per{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.padding5perVertical{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.font24{
+	font-size: 24px;
+}
+
+.font18{
+	font-size: 18px;
+}
+
+.font20{
+	font-size: 20px;
+}
+
+.font26{
+	font-size: 26px;
+}
+
+.font34{
+	font-size: 34px;
+}
+
+#styleSpans{
+	padding-left: 10%; 
+	padding-right: 10%;
+	width: 100%; 
+	align-items: center;
+}
+
+.width100{
+	width: 100% !important;
+	overflow:auto;
+}
+
+.width80{
+	width: 80%;
+}
+
+.max100{
+	max-width: 80% !important;
+}
+
+.overflowH{
+	overflow: hidden;
+}
+
+.paddingLeft5{
+	padding-left: 5%;
+}
+
+.paddingRight5{
+	padding-right: 5%;
+}
+
+.star{
+	border-color: black;
+	color:black;
+}
+
+.picture_size {
+	height: 460px !important;
+}
+
+.height100{
+	height: 100% !important;
+	text-align: center !important;
+}
+
+#SearchBar {
+	height: 80%;
+	padding-top: 0%;
+	max-width: 100%;
+	width:346px; 
+}
+  
+#SearchBar2{
+	width:100%; 
+	max-width: 100%; 
+	padding-top: 30px; 
+	padding-bottom: 20px; 
+	border-color: rgb(224, 126, 46) !important;
+}
+  
+#SearchField {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	width:300px; 
+	height: 26px;
+	max-width: 75%;
+  
+}
+  
+.active {
+	font-weight: bold;
+	color: black;
+}
+  
+.flag{
+	width: 35px;
+	height: 35px;
+	z-index: 5;
+}
+  
+hr{
+	border-top: 1px solid white;
+}
+
+.image_food{
+    height: 70%;
+}
+
+.detailButton{
+    width: 160px;
+	background-color: rgb(224, 126, 46) !important;
+	color:white !important;  
+}
+
+.lettersFoodBig
+{
+    font-size:20px !important;
+}
+
+.stars{
+	float:right !important;
+	padding-right: 6%;
+}
+
+.input_border_orange{
+	color: rgb(224, 126, 46);
+	border-color: rgb(224, 126, 46);
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:  black !important;
+  }
+
+.heightFit{
+	height: 300px;
+}
+
+.max{
+	height:100%;
+}
+
+.input_black_letters{
+	color: black;
+}
+
+.imagesize{
+	max-height: 100px;
+}
+
+.box{
+	padding-left: 10%; 
+	padding-right: 10%;
+	width: 100%; 
+	align-items: center;
+	color: white;
+}
+
+.marginMy{
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 20px !important;
+	padding-bottom: 10px !important;
+}
+
+.no_underline{
+	text-decoration: none;
+}
+
+.no_hover:hover {
+	text-decoration: none;
+}
+.no_hover_back:hover {
+	background-color: w3-light-gray !important;
+}
+#placeholder{
+    width: 50px !important;
+}
+
+.image_height{
+    height: 220px !important;
+	
+}
+
+.image_height_more{
+    height: 250px !important;
+	max-width: 320px;
+	
+}
+
+.button_orange
+{
+	color: white !important;
+	border-color: rgb(224, 126, 46) !important;
+	background-color: rgb(224, 126, 46) !important;
+}
+
+.border{
+	border-color: orange;
+	border-width: 5px !important;
+}
+
+.orange{
+	color: rgb(224, 126, 46) !important;
+	font-weight: normal;
+
+}
+.italic{
+	font-style: italic;
+}
+
+.myCarosel{
+	width: 100%;
+	height: 350px;
+	
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.slideshow-img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
